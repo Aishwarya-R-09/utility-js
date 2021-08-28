@@ -1,6 +1,5 @@
 const addFunction = require('./add');
 const headFunction = require('./add');
-const tailFunction = require('./add');
 
 describe('Add', () => {
     it('Add two numbers', () => {
@@ -12,6 +11,5 @@ describe('Add', () => {
     it('should return null if the array is empty', ()=>{
         expect(headFunction.head()).toEqual(null);
     })
-    
-    
+       
 });
