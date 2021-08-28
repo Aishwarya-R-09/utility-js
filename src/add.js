@@ -16,7 +16,13 @@ function tail(...array){
     return null;
 }
 
+function min(...array){
+    return array.reduce(function (num1, num2) {
+        return ( num1 < num2 ? num1 : num2 );
+      });
+}
 
 
-module.exports = {add,head,tail};
+
+module.exports = {add,head,tail,min};
 

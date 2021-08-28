@@ -1,6 +1,7 @@
 const addFunction = require('./add');
 const headFunction = require('./add');
 const tailFunction = require('./add');
+const minFunction = require('./add');
 
 describe('Add', () => {
     it('Add two numbers', () => {
@@ -17,6 +18,9 @@ describe('Add', () => {
     })
     it('should return null if the array is empty', ()=>{
         expect(tailFunction.tail()).toEqual(null);
+    })
+    it('should return the minimum element of an array', ()=>{
+        expect(minFunction.min(1,2,3,4)).toEqual(1);
     })
 
        
