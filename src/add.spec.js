@@ -2,6 +2,7 @@ const addFunction = require('./add');
 const headFunction = require('./add');
 const tailFunction = require('./add');
 const minFunction = require('./add');
+const maxFunction = require('./add');
 
 describe('Add', () => {
     it('Add two numbers', () => {
@@ -21,6 +22,9 @@ describe('Add', () => {
     })
     it('should return the minimum element of an array', ()=>{
         expect(minFunction.min(1,2,3,4)).toEqual(1);
+    })
+    it('should return the maximum element of an array', ()=>{
+        expect(maxFunction.max(1,2,3,4)).toEqual(4);
     })
 
        

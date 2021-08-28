@@ -22,7 +22,13 @@ function min(...array){
       });
 }
 
+function max(...array){
+    return array.reduce(function (num1, num2) {
+        return ( num1 > num2 ? num1 : num2 );
+      });
+}
 
 
-module.exports = {add,head,tail,min};
+
+module.exports = {add,head,tail,min,max};
 
