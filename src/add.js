@@ -1,5 +1,5 @@
-function add(number1,number2) {
-    return (number1 + number2);   
+function add(...array) {
+    return array.reduce((total, num) => total+num, 0);   
 }
 
 function head(...array){
