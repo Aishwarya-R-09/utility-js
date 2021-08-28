@@ -1,4 +1,15 @@
-const add = (first,second) => {
-    return first + second;   
+function add(a,b) {
+    return (a + b);   
 }
-module.exports = add;
+
+function head(...array){
+    if(array.length>0){
+        return array[0];
+    }
+    return null;
+}
+
+
+
+module.exports = {add,head};
+
