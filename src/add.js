@@ -19,16 +19,25 @@ function tail(...array){
 function min(...array){
     return array.reduce(function (num1, num2) {
         return ( num1 < num2 ? num1 : num2 );
-      });
+    });
 }
 
 function max(...array){
     return array.reduce(function (num1, num2) {
         return ( num1 > num2 ? num1 : num2 );
-      });
+    });
+}
+
+function filter(array, fun){
+    let new_arr = [];
+    array.map(ele => {
+        if(fun(ele))
+            new_arr.push(ele);
+    })
+    return new_arr;
 }
 
 
 
-module.exports = {add,head,tail,min,max};
+module.exports = {add,head,tail,min,max,filter};
 
